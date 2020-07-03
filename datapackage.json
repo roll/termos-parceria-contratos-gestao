@@ -3,7 +3,7 @@
   "resources": [
     {
       "name": "termos-de-parceria-e-contratos-de-gestao",
-      "path": "https://raw.githubusercontent.com/dados-mg/termos-de-parceria-e-contratos-de-gestao/master/data/termosdeparceriaecontratosdegestao.csv",
+      "path": "data/termosdeparceriaecontratosdegestao.csv",
       "profile": "tabular-data-resource",
       "schema": {
         "fields": [
@@ -126,7 +126,7 @@
   "description": "Extrato dos Termos de Parceria e Contratos de Gestão firmados pelos órgãos e entidades do Poder Executivo Estadual com OSCIPs e Organizações Sociais",
   "name": "termos-de-parceria-e-contratos-de-gestao",
   "title": "Termos de Parceria e Contratos de Gestão",
-  "homepage": "https://raw.githubusercontent.com/dados-mg/termos-de-parceria-e-contratos-de-gestao",
+  "homepage": "http://dados.mg.gov.br/dataset/termos-de-parceria-e-contratos-de-gestao",
   "private": "false",
   "state": "active",
   "commit": "",
