@@ -131,6 +131,10 @@
   "private": "false",
   "state": "active",
   "commit": "b4f388e72160570fca450bfdaf685edb7f9c07c5",
+  "sources": [{
+    "name": "Informações dos termos de parceria e contratos de gestão",
+  "path": "http://planejamento.mg.gov.br/documento/informacoes-dos-termos-de-parceria-e-contratos-de-gestao"
+  }],
   "contributors": [
   {
   "title": "Diretoria de Transparência Ativa",
