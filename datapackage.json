@@ -5,6 +5,7 @@
       "name": "termos-de-parceria-e-contratos-de-gestao",
       "path": "data/termosdeparceriaecontratosdegestao.csv",
       "profile": "tabular-data-resource",
+      "resourceType": "text/csv",
       "schema": {
         "fields": [
           {
@@ -133,13 +134,13 @@
   "contributors": [
   {
   "title": "Diretoria de Transparência Ativa",
-  "path": "dados.mg.gov.br",
+  "path": "http://cge.mg.gov.br/a-cge/quem-e-quem/subcontroladoria-de-transparencia-e-integridade",
   "role": "publisher",
   "email": "transparencia@cge.mg.gov.br"
   },
   {
   "title": "Superintendência Central de Parcerias com o Terceiro Setor",
-  "path": "http://planejamento.mg.gov.br/documento/informacoes-dos-termos-de-parceria-e-contratos-de-gestao-0",
+  "path": "http://www.seplag.mg.gov.br/quem-e-quem/27",
   "role": "author",
   "email": "amanda.farnezi@planejamento.mg.gov.br"
   }
