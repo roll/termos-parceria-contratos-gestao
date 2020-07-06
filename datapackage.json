@@ -2,8 +2,8 @@
   "profile": "tabular-data-package",
   "resources": [
     {
-      "name": "termos-de-parceria-e-contratos-de-gestao",
-      "path": "data/termosdeparceriaecontratosdegestao.csv",
+      "name": "termos-parceria-contratos-gestao",
+      "path": "data/termos-parceria-contratos-gestao.csv",
       "profile": "tabular-data-resource",
       "resourceType": "text/csv",
       "schema": {
