@@ -112,6 +112,13 @@
             "format": "default",
             "title": "Repasse realizado",
             "description": "Valor total de recursos efetivamente disponibilizados para a execução da parceria."
+          },
+          {
+            "name": "DATA_ATUALIZACAO",
+            "type": "number",
+            "format": "default",
+            "title": "Data Atualização",
+            "description": "Data do upload do arquivo"
           }
         ]
       }
