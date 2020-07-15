@@ -132,9 +132,9 @@
     "terceiro setor"
   ],
   "description": "Extrato dos Termos de Parceria e Contratos de Gestão firmados pelos órgãos e entidades do Poder Executivo Estadual com OSCIPs e Organizações Sociais",
-  "name": "termos-de-parceria-e-contratos-de-gestao",
+  "name": "termos-parceria-contratos-gestao",
   "title": "Termos de Parceria e Contratos de Gestão",
-  "homepage": "http://dados.mg.gov.br/dataset/termos-de-parceria-e-contratos-de-gestao",
+  "homepage": "http://dados.mg.gov.br/dataset/termos-parceria-contratos-gestao",
   "private": "false",
   "state": "active",
   "update":"true",
