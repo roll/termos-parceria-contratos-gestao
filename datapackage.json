@@ -5,7 +5,6 @@
       "name": "termos-parceria-contratos-gestao",
       "path": "data/termos-parceria-contratos-gestao.csv",
       "profile": "tabular-data-resource",
-      "resourceType": "text/csv",
       "schema": {
         "fields": [
           {
