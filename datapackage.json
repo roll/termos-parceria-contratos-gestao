@@ -135,30 +135,7 @@
   "description": "Extrato dos Termos de Parceria e Contratos de Gestão firmados pelos órgãos e entidades do Poder Executivo Estadual com OSCIPs e Organizações Sociais",
   "name": "termos-parceria-contratos-gestao",
   "title": "Termos de Parceria e Contratos de Gestão",
-  "homepage": "http://dados.mg.gov.br/dataset/termos-parceria-contratos-gestao",
   "private": "false",
   "state": "active",
   "update":"true",
-  "commit": "3479de17c316bda52f4af710e127ba352382c228",
-  "contributors": [
-  {
-  "title": "Diretoria de Transparência Ativa",
-  "path": "http://cge.mg.gov.br/a-cge/quem-e-quem/subcontroladoria-de-transparencia-e-integridade",
-  "role": "publisher",
-  "email": "transparencia@cge.mg.gov.br"
-  },
-  {
-  "title": "Superintendência Central de Parcerias com o Terceiro Setor",
-  "path": "http://www.seplag.mg.gov.br/quem-e-quem/27",
-  "role": "author",
-  "email": "amanda.farnezi@planejamento.mg.gov.br"
-  }
-  ],
-  "licenses": [
-  {
-  "name": "CC-BY-SA-4.0",
-  "title": "Creative Commons Attribution Share-Alike 4.0",
-  "path": "https://creativecommons.org/licenses/by-sa/4.0/"
-  }
- ]
 }
