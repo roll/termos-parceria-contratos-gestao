@@ -136,6 +136,5 @@
   "title": "Termos de Parceria e Contratos de Gestão",
   "description": "Extrato dos Termos de Parceria e Contratos de Gestão firmados pelos órgãos e entidades do Poder Executivo Estadual com OSCIPs e Organizações Sociais",
   "private": "false",
-  "state": "active",
-  "update":"true"
+  "state": "active"
 }
