@@ -1,4 +1,4 @@
-{
+ {
   "profile": "tabular-data-package",
   "resources": [
     {
@@ -84,36 +84,37 @@
           },
           {
             "name": "DATA_INICIO_VIGENCIA",
-            "type": "number",
-            "format": "default",
+            "type": "date",
+            "format": "any",
             "title": "Data de início da vigência",
             "description": "Data em que o instrumento jurídico se inicia, correspondente a data de publicação do mesmo no Diário Oficial dos Poderes do Estado de Minas Gerais."
           },
           {
             "name": "DATA_FIM_VIGENCIA",
-            "type": "number",
-            "format": "default",
+            "type": "date",
+            "format": "any",
             "title": "Data de fim da vigência",
             "description": "Data em que o instrumento jurídico terminou ou que será extinto."
           },
           {
             "name": "ANO",
-            "type": "number",
-            "format": "default",
+            "type": "year",
             "title": "Ano",
             "description": "Um dos anos em que a parceria esteve vigente. Ano de referência das informações financeiras preenchidas nas colunas: “REPASSE_PREVISTO” e “REPASSE_REALIZADO”."
           },
           {
             "name": "REPASSE_PREVISTO",
-            "type": "string",
+            "type": "number",
             "format": "default",
+            "decimalChar":",",
             "title": "Repasse previsto",
             "description": "Valor total de recursos previstos para a execução da parceria, por ano. "
           },
           {
             "name": "REPASSE_REALIZADO",
-            "type": "string",
+            "type": "number",
             "format": "default",
+            "decimalChar":",",
             "title": "Repasse realizado",
             "description": "Valor total de recursos efetivamente disponibilizados para a execução da parceria."
           }
