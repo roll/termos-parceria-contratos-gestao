@@ -33,20 +33,21 @@
 
 #### As colunas anteriores foram redistribuídas entre os arquivos e/ou tiveram a sua nomenclatura alterada, conforme quadro abaixo:
 
-COLUNA_ANTERIOR	NOVA_COLUNA	ARQUIVO_CSV
-TIPO_INSTRUMENTO	sem alteração	termos-parcerias-contratos-gestao
-NUM_TERMO_CONTRATO	sem alteração	termos-parcerias-contratos-gestao
-CODIGO_ORGAO_ESTATAL	ORGAO_ESTATAL_CODIGO	termos-parcerias-contratos-gestao
-NOME_ORGAO_ESTATAL	ORGAO_ESTATAL_NOME	termos-parcerias-contratos-gestao
-ORGAO_ESTATAL_SIGLA	sem alteração	termos-parcerias-contratos-gestao
-ENTIDADE_PARCEIRA_NOME	sem alteração	termos-parcerias-contratos-gestao
-ENTIDADE_PARCEIRA_SIGLA	sem alteração	termos-parcerias-contratos-gestao
-ENTIDADE_PARCEIRA_CNPJ	sem alteração	termos-parcerias-contratos-gestao
-OBJETO	sem alteração	termos-parcerias-contratos-gestao
-SITUACAO	sem alteração	termos-parcerias-contratos-gestao
-DATA_INICIO_VIGENCIA	sem alteração	termos-parcerias-contratos-gestao
-DATA_FIM_VIGENCIA	sem alteração	termos-parcerias-contratos-gestao
-ANO	sem alteração	repasses
-REPASSE_PREVISTO	sem alteração	repasses
-REPASSE_REALIZADO	sem alteração	repasses
+| COLUNA_ANTERIOR|	NOVA_COLUNA|	ARQUIVO_CSV|
+| --            |   --             | --            |
+|TIPO_INSTRUMENTO|	sem alteração|	termos-parcerias-contratos-gestao|
+|NUM_TERMO_CONTRATO|	sem alteração|	termos-parcerias-contratos-gestao|
+|CODIGO_ORGAO_ESTATAL|	ORGAO_ESTATAL_CODIGO|	termos-parcerias-contratos-gestao|
+|NOME_ORGAO_ESTATAL|	ORGAO_ESTATAL_NOME|	termos-parcerias-contratos-gestao|
+|ORGAO_ESTATAL_SIGLA|	sem alteração|	termos-parcerias-contratos-gestao|
+|ENTIDADE_PARCEIRA_NOME|	sem alteração|	termos-parcerias-contratos-gestao|
+|ENTIDADE_PARCEIRA_SIGLA|	sem alteração|	termos-parcerias-contratos-gestao|
+|ENTIDADE_PARCEIRA_CNPJ|	sem alteração|	termos-parcerias-contratos-gestao|
+|OBJETO|	sem alteração|	termos-parcerias-contratos-gestao|
+|SITUACAO|	sem alteração|	termos-parcerias-contratos-gestao|
+|DATA_INICIO_VIGENCIA|	sem alteração|	termos-parcerias-contratos-gestao|
+|DATA_FIM_VIGENCIA|	sem alteração|	termos-parcerias-contratos-gestao|
+|ANO|	sem alteração|	repasses|
+|REPASSE_PREVISTO|	sem alteração|	repasses|
+|REPASSE_REALIZADO|	sem alteração|	repasses|
 
