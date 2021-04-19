@@ -2,10 +2,10 @@
   "profile": "tabular-data-package",
   "resources": [
     {
-      "name": "transferencia-impostos-municipios",
-      "path": "contratos-gestao-termos-parceria.csv",
+      "name": "termos-parceria-contratos-gestao",
+      "path": "data/termos-parceria-contratos-gestao.csv",
       "profile": "tabular-data-resource",
-      "title": "Contratos de Gestão e Termos de Parceria",
+      "title": "Termos de Parceria e Contratos de Gestão",
       "description": "Extrato dos Termos de Parceria e Contratos de Gestão firmados pelos órgãos e entidades do Poder Executivo Estadual com OSCIPs e Organizações Sociais",
       "format": "csv",
       "mediatype": "text/csv",
@@ -126,7 +126,7 @@
     },
     {
       "name": "aditivos",
-      "path": "aditivos.csv",
+      "path": "data/aditivos.csv",
       "profile": "tabular-data-resource",
       "title": "Aditivos",
       "description": "Aditivos dos Termos de Parceria e Contratos de Gestão firmados pelos órgãos e entidades do Poder Executivo Estadual com OSCIPs e Organizações Sociais",
@@ -179,7 +179,7 @@
     },
     {
       "name": "repasses",
-      "path": "repasses.csv",
+      "path": "data/repasses.csv",
       "profile": "tabular-data-resource",
       "title": "Repasses",
       "description": "Repasses dos Termos de Parceria e Contratos de Gestão firmados pelos órgãos e entidades do Poder Executivo Estadual com OSCIPs e Organizações Sociais",
@@ -236,7 +236,7 @@
     },
     {
       "name": "relatorios",
-      "path": "relatorios.csv",
+      "path": "data/relatorios.csv",
       "profile": "tabular-data-resource",
       "title": "Relatórios",
       "description": "Relatórios dos Termos de Parceria e Contratos de Gestão firmados pelos órgãos e entidades do Poder Executivo Estadual com OSCIPs e Organizações Sociais",
