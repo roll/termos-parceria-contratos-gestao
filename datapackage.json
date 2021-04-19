@@ -117,11 +117,7 @@
             "title": "URL da Página dos documentos",
             "description": "Link para acessar a página principal contendo os documentos do Contrato de Gestão ou Termo de Parceria"
           }
-        ],
-  "missingValues": [
-    "NA",
-    ""
-  ]
+        ]
       }
     },
     {
@@ -170,11 +166,7 @@
             "title": "Observações",
             "description": "Dados adicionais para esclarecer alguma informação sobre a linha"
           }
-        ],
-  "missingValues": [
-    "NA",
-    ""
-  ]
+        ]
       }     
     },
     {
@@ -227,11 +219,7 @@
             "title": "Observações",
             "description": "Dados adicionais para esclarecer alguma informação sobre a linha"
           }
-        ],
-  "missingValues": [
-    "NA",
-    ""
-  ]
+        ]
       }
     },
     {
@@ -287,11 +275,7 @@
             "title": "Observações",
             "description": "Dados adicionais para esclarecer alguma informação sobre a linha"
           }
-        ],
-  "missingValues": [
-    "NA",
-    ""
-  ]
+        ]
       }
     }
   ],
