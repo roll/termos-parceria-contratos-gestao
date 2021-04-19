@@ -1,11 +1,11 @@
- {
+{
   "profile": "tabular-data-package",
   "resources": [
     {
+      "name": "transferencia-impostos-municipios",
+      "path": "contratos-gestao-termos-parceria.csv",
       "profile": "tabular-data-resource",
-      "name": "termos-parceria-contratos-gestao",
-      "path": "data/termos-parceria-contratos-gestao.csv",
-      "title": "Termos de Parceria e Contratos de Gestão",
+      "title": "Contratos de Gestão e Termos de Parceria",
       "description": "Extrato dos Termos de Parceria e Contratos de Gestão firmados pelos órgãos e entidades do Poder Executivo Estadual com OSCIPs e Organizações Sociais",
       "format": "csv",
       "mediatype": "text/csv",
@@ -13,46 +13,53 @@
       "schema": {
         "fields": [
           {
-            "name": "TIPO_INSTRUMENTO",
+            "name": "ID_INSTRUMENTO",
             "type": "string",
             "format": "default",
-            "description": "Define se o instrumento jurídico celebrado é um Termo de Parceria ou um Contrato de Gestão.",
-            "title": "Tipo do Instrumento"
+            "title": "Número do Instrumento",
+            "description": "Numeração do instrumento jurídico, estabelecida pela Secretaria de Estado de Planejamento e Gestão"
+          },
+          {
+            "name": "TIPO_INTRUMENTO",
+            "type": "string",
+            "format": "default",
+            "title": "Tipo de Instrumento",
+            "description": "Define se o instrumento jurídico celebrado é um Termo de Parceria ou um Contrato de Gestão"
           },
           {
             "name": "NUM_TERMO_CONTRATO",
             "type": "string",
             "format": "default",
-            "title": "Número do Termo ou Contrato",
-            "description": "Numeração do instrumento jurídico, estabelecida pela Secretaria de Estado de Planejamento e Gestão."
+            "title": "Número do Contrato ou Termo",
+            "description": "Numeração do instrumento jurídico, estabelecida pela Secretaria de Estado de Planejamento e Gestão"
           },
           {
-            "name": "CODIGO_ORGAO_ESTATAL",
+            "name": "ORGAO_ESTATAL_CODIGO",
             "type": "number",
             "format": "default",
-            "title": "Código do Órgão Estadual",
-            "description": "Código da unidade orçamentária do órgão estadual signatário do instrumento jurídico."
+            "description": "Código da unidade orçamentária do órgão estadual signatário do instrumento jurídico.",
+            "title": "Código do Órgão Estatal"
           },
           {
-            "name": "NOME_ORGAO_ESTATAL",
+            "name": "ORGAO_ESTATAL_NOME",
             "type": "string",
             "format": "default",
-            "title": "Nome do Órgão Estadual",
+            "title": "Nome do Órgão Estatal",
             "description": "Nome institucional do órgão estadual signatário do instrumento jurídico."
           },
           {
             "name": "ORGAO_ESTATAL_SIGLA",
-            "type": "string",
+            "type": "any",
             "format": "default",
-            "title": "Sigla do Órgão Estadual",
+            "title": "Sigla do Órgão Estatal",
             "description": "Sigla do Órgão Estadual"
           },
           {
             "name": "ENTIDADE_PARCEIRA_NOME",
             "type": "string",
             "format": "default",
-            "title": "Nome da Entidade Parceira",
-            "description": "Nome oficial da instituição do terceiro setor celebrante do instrumento jurídico."
+            "description": "Nome oficial da instituição do terceiro setor celebrante do instrumento jurídico.",
+            "title": "Nome da Entidade Parceira"
           },
           {
             "name": "ENTIDADE_PARCEIRA_SIGLA",
@@ -66,14 +73,14 @@
             "type": "string",
             "format": "default",
             "title": "CNPJ da Entidade Parceira",
-            "description": "Número de Cadastro Nacional de Pessoas Jurídicas da instituição do terceiro setor celebrante do instrumento jurídico."
+            "description": "Número de Cadastro Nacional de Pessoas Jurídicas da instituição do terceiro setor celebrante do instrumento jurídico"
           },
           {
             "name": "OBJETO",
             "type": "string",
             "format": "default",
             "title": "Objeto",
-            "description": "O objeto do instrumento jurídico."
+            "description": "O objeto do instrumento jurídico"
           },
           {
             "name": "SITUACAO",
@@ -85,20 +92,113 @@
           {
             "name": "DATA_INICIO_VIGENCIA",
             "type": "date",
-            "format": "%Y%m%d",
-            "title": "Data de início da vigência",
+            "format": "any",
+            "title": "Data de Início da Vigência",
             "description": "Data em que o instrumento jurídico se inicia, correspondente a data de publicação do mesmo no Diário Oficial dos Poderes do Estado de Minas Gerais."
           },
           {
             "name": "DATA_FIM_VIGENCIA",
             "type": "date",
-            "format": "%Y%m%d",
-            "title": "Data de fim da vigência",
+            "format": "any",
+            "title": "Data Fim da Vigência",
             "description": "Data em que o instrumento jurídico terminou ou que será extinto."
+          },
+          {
+            "name": "URL_INTEGRA_TERMO_CONTRATO",
+            "type": "string",
+            "format": "uri",
+            "title": "URL da íntegra do Contrato de Gestão ou Termo de Parceria",
+            "description": "Link para acessar o Contrato de Gestão ou Termo de Parceria"
+          },
+          {
+            "name": "URL_DOCUMENTOS_TERMO_CONTRATO",
+            "type": "string",
+            "format": "uri",
+            "title": "URL da Página dos documentos",
+            "description": "Link para acessar a página principal contendo os documentos do Contrato de Gestão ou Termo de Parceria"
+          }
+        ],
+  "missingValues": [
+    "NA",
+    ""
+  ]
+      }
+    },
+    {
+      "name": "aditivos",
+      "path": "aditivos.csv",
+      "profile": "tabular-data-resource",
+      "title": "Aditivos",
+      "description": "Aditivos dos Termos de Parceria e Contratos de Gestão firmados pelos órgãos e entidades do Poder Executivo Estadual com OSCIPs e Organizações Sociais",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "ID_INSTRUMENTO",
+            "type": "string",
+            "format": "default",
+            "title": "Número do Instrumento",
+            "description": "Numeração do instrumento jurídico, estabelecida pela Secretaria de Estado de Planejamento e Gestão."
+          },
+          {
+            "name": "TIPO_DOCUMENTO",
+            "type": "string",
+            "format": "default",
+            "title": "Tipo de Documento",
+            "description": "Informa o tipo de documento a que se refere: Termo Aditivo, Memória de Cálculo, Termo de Apostilamento e Termo de Alteração Simples"
+          },
+          {
+            "name": "DOCUMENTO",
+            "type": "string",
+            "format": "default",
+            "title": "Número do Documento",
+            "description": "Informa o número do documento"
+          },
+          {
+            "name": "URL_DOCUMENTO",
+            "type": "string",
+            "format": "uri",
+            "title": "URL do Documento",
+            "description": "Link para acessar o documento"
+          },
+          {
+            "name": "OBSERVACOES",
+            "type": "string",
+            "format": "default",
+            "title": "Observações",
+            "description": "Dados adicionais para esclarecer alguma informação sobre a linha"
+          }
+        ],
+  "missingValues": [
+    "NA",
+    ""
+  ]
+      }     
+    },
+    {
+      "name": "repasses",
+      "path": "repasses.csv",
+      "profile": "tabular-data-resource",
+      "title": "Repasses",
+      "description": "Repasses dos Termos de Parceria e Contratos de Gestão firmados pelos órgãos e entidades do Poder Executivo Estadual com OSCIPs e Organizações Sociais",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "ID_INSTRUMENTO",
+            "type": "string",
+            "format": "default",
+            "title": "Número do Instrumento",
+            "description": "Numeração do instrumento jurídico, estabelecida pela Secretaria de Estado de Planejamento e Gestão."
           },
           {
             "name": "ANO",
             "type": "year",
+            "format": "default",
             "title": "Ano",
             "description": "Um dos anos em que a parceria esteve vigente. Ano de referência das informações financeiras preenchidas nas colunas: “REPASSE_PREVISTO” e “REPASSE_REALIZADO”."
           },
@@ -106,36 +206,104 @@
             "name": "REPASSE_PREVISTO",
             "type": "number",
             "format": "default",
-            "decimalChar":",",
-            "title": "Repasse previsto",
-            "description": "Valor total de recursos previstos para a execução da parceria, por ano. "
+            "title": "Repasse Previsto",
+            "description": "Valor total de recursos previstos para a execução da parceria, por ano.",
+            "groupChar":".",
+            "decimalChar":","
           },
           {
-            "name": "REPASSE_REALIZADO",
+            "name": "REPASSE_ATUALIZADO",
             "type": "number",
             "format": "default",
-            "decimalChar":",",
-            "title": "Repasse realizado",
-            "description": "Valor total de recursos efetivamente disponibilizados para a execução da parceria."
+            "title": "Repasse Atualizado",
+            "description": "Valor total de recursos efetivamente disponibilizados para a execução da parceria",
+            "groupChar":".",
+            "decimalChar":","
+          },
+          {
+            "name": "OBSERVACOES",
+            "type": "string",
+            "format": "default",
+            "title": "Observações",
+            "description": "Dados adicionais para esclarecer alguma informação sobre a linha"
           }
         ],
-        "missingValues": ["NA"]
-     },
-      "dialect": {
-      "delimiter": ";"
+  "missingValues": [
+    "NA",
+    ""
+  ]
+      }
+    },
+    {
+      "name": "relatorios",
+      "path": "relatorios.csv",
+      "profile": "tabular-data-resource",
+      "title": "Relatórios",
+      "description": "Relatórios dos Termos de Parceria e Contratos de Gestão firmados pelos órgãos e entidades do Poder Executivo Estadual com OSCIPs e Organizações Sociais",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "ID_INSTRUMENTO",
+            "type": "string",
+            "format": "default",
+            "title": "Número do Instrumento",
+            "description": "Numeração do instrumento jurídico, estabelecida pela Secretaria de Estado de Planejamento e Gestão"
+          },
+          {
+            "name": "TIPO_DOCUMENTO",
+            "type": "string",
+            "format": "default",
+            "title": "Tipo de Documento",
+            "description": "Informa o tipo de relatório a que se refere"
+          },
+          {
+            "name": "DOCUMENTO",
+            "type": "string",
+            "format": "default",
+            "title": "Documento",
+            "description": "Informa o número do documento"
+          },
+          {
+            "name": "PERIODO_AVALIATORIO",
+            "type": "string",
+            "format": "default",
+            "title": "Período Avaliatório",
+            "description": "Informa o período da avaliação do relatório"
+          },
+          {
+            "name": "URL_DOCUMENTO",
+            "type": "string",
+            "format": "uri",
+            "title": "URL do Documento",
+            "description": "Link para acessar o relatório"
+          },
+          {
+            "name": "OBSERVACOES",
+            "type": "string",
+            "format": "default",
+            "title": "Observações",
+            "description": "Dados adicionais para esclarecer alguma informação sobre a linha"
+          }
+        ],
+  "missingValues": [
+    "NA",
+    ""
+  ]
       }
     }
   ],
   "keywords": [
-    "contrato de gestão",
-    "termo de parceria",
+    "contratos de gestão",
+    "termos de parceria",
     "OSCIP",
     "OS",
-    "terceiro setor"
+    "termos aditivos",
+    "relatorios de avaliacao"
   ],
-  "name": "termos-parceria-contratos-gestao",
-  "title": "Termos de Parceria e Contratos de Gestão",
-  "description": "Extrato dos Termos de Parceria e Contratos de Gestão firmados pelos órgãos e entidades do Poder Executivo Estadual com OSCIPs e Organizações Sociais",
-  "private": "false",
-  "state": "active"
+  "name": "contratos-gestao-termos-parceria",
+  "title": "Contrato de Gestão e Termos de Parceria",
+  "description": "Documentos dos Termos de Parceria e Contratos de Gestão firmados pelos órgãos e entidades do Poder Executivo Estadual com OSCIPs e Organizações Sociais"
 }
