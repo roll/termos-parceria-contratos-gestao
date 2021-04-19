@@ -166,6 +166,15 @@
             "title": "Observações",
             "description": "Dados adicionais para esclarecer alguma informação sobre a linha"
           }
+        ],
+        "foreignKeys": [
+          {
+            "fields": "ID_INSTRUMENTO",
+            "reference": {
+              "resource": "termos-parceria-contratos-gestao",
+              "fields": "ID_INSTRUMENTO"
+            }
+          }
         ]
       }     
     },
@@ -218,6 +227,15 @@
             "format": "default",
             "title": "Observações",
             "description": "Dados adicionais para esclarecer alguma informação sobre a linha"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "fields": "ID_INSTRUMENTO",
+            "reference": {
+              "resource": "termos-parceria-contratos-gestao",
+              "fields": "ID_INSTRUMENTO"
+            }
           }
         ]
       }
@@ -274,6 +292,15 @@
             "format": "default",
             "title": "Observações",
             "description": "Dados adicionais para esclarecer alguma informação sobre a linha"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "fields": "ID_INSTRUMENTO",
+            "reference": {
+              "resource": "termos-parceria-contratos-gestao",
+              "fields": "ID_INSTRUMENTO"
+            }
           }
         ]
       }
