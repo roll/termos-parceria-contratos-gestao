@@ -129,7 +129,8 @@
             "title": "URL da Página dos documentos",
             "description": "Link para acessar a página principal contendo os documentos do Contrato de Gestão ou Termo de Parceria"
           }
-        ]
+        ],
+      "primaryKey": "ID_INSTRUMENTO"
       }
     },
     {
