@@ -24,7 +24,13 @@
             "type": "string",
             "format": "default",
             "title": "Tipo de Instrumento",
-            "description": "Define se o instrumento jurídico celebrado é um Termo de Parceria ou um Contrato de Gestão"
+            "description": "Define se o instrumento jurídico celebrado é um Termo de Parceria ou um Contrato de Gestão",
+            "constraints": {
+              "enum": [
+                "Contrato de Gestão",
+                "Termo de Parceria"
+              ]
+            }
           },
           {
             "name": "NUM_TERMO_CONTRATO",
