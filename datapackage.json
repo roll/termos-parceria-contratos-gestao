@@ -20,7 +20,7 @@
             "description": "Numeração do instrumento jurídico, estabelecida pela Secretaria de Estado de Planejamento e Gestão"
           },
           {
-            "name": "TIPO_INTRUMENTO",
+            "name": "TIPO_INSTRUMENTO",
             "type": "string",
             "format": "default",
             "title": "Tipo de Instrumento",
