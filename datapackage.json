@@ -2,7 +2,7 @@
   "profile": "tabular-data-package",
   "resources": [
     {
-      "name": "transferencia-impostos-municipios",
+      "name": "contratos-gestao-termos-parceria",
       "path": "data/contratos-gestao-termos-parceria.csv",
       "profile": "tabular-data-resource",
       "title": "Contratos de Gestão e Termos de Parceria",
@@ -147,20 +147,14 @@
             "type": "string",
             "format": "uri",
             "title": "URL da íntegra do Contrato de Gestão ou Termo de Parceria",
-            "description": "Link para acessar o Contrato de Gestão ou Termo de Parceria",
-            "constraints": {
-            "required": true
-          }
+            "description": "Link para acessar o Contrato de Gestão ou Termo de Parceria"
           },
           {
             "name": "URL_DOCUMENTOS_TERMO_CONTRATO",
             "type": "string",
             "format": "uri",
             "title": "URL da Página dos documentos",
-            "description": "Link para acessar a página principal contendo os documentos do Contrato de Gestão ou Termo de Parceria",
-            "constraints": {
-            "required": true
-          }
+            "description": "Link para acessar a página principal contendo os documentos do Contrato de Gestão ou Termo de Parceria"
           }
         ],
   "missingValues": [
@@ -225,10 +219,7 @@
             "type": "string",
             "format": "default",
             "title": "Observações",
-            "description": "Dados adicionais para esclarecer alguma informação sobre a linha",
-            "constraints": {
-            "required": true
-          }
+            "description": "Dados adicionais para esclarecer alguma informação sobre a linha"
           }
         ],
   "missingValues": [
@@ -297,10 +288,7 @@
             "type": "string",
             "format": "default",
             "title": "Observações",
-            "description": "Dados adicionais para esclarecer alguma informação sobre a linha",
-            "constraints": {
-            "required": true
-          }
+            "description": "Dados adicionais para esclarecer alguma informação sobre a linha"
           }
         ],
   "missingValues": [
