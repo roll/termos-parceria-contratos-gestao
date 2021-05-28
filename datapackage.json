@@ -3,7 +3,7 @@
   "resources": [
     {
       "name": "termos-parceria-contratos-gestao",
-      "path": "data/termos-parceria-contratos-gestao.csv",
+      "path": "data/contratos-gestao-termos-parceria.csv",
       "profile": "tabular-data-resource",
       "title": "Termos de Parceria e Contratos de Gestão",
       "description": "Extrato dos Termos de Parceria e Contratos de Gestão firmados pelos órgãos e entidades do Poder Executivo Estadual com OSCIPs e Organizações Sociais",
