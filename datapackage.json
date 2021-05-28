@@ -2,10 +2,10 @@
   "profile": "tabular-data-package",
   "resources": [
     {
-      "name": "contratos-gestao-termos-parceria",
-      "path": "data/contratos-gestao-termos-parceria.csv",
+      "name": "termos-parceria-contratos-gestao",
+      "path": "data/termos-parceria-contratos-gestao.csv",
       "profile": "tabular-data-resource",
-      "title": "Contratos de Gestão e Termos de Parceria",
+      "title": "Termos de Parceria e Contratos de Gestão",
       "description": "Extrato dos Termos de Parceria e Contratos de Gestão firmados pelos órgãos e entidades do Poder Executivo Estadual com OSCIPs e Organizações Sociais",
       "format": "csv",
       "mediatype": "text/csv",
@@ -19,18 +19,22 @@
             "title": "Número do Instrumento",
             "description": "Numeração do instrumento jurídico, estabelecida pela Secretaria de Estado de Planejamento e Gestão",
             "constraints": {
-            "required": true
-          }
+              "pattern": "(CG|TP)_\\d{3}\/\\d{4}"
+            }
           },
           {
-            "name": "TIPO_INTRUMENTO",
+            "name": "TIPO_INSTRUMENTO",
             "type": "string",
             "format": "default",
             "title": "Tipo de Instrumento",
             "description": "Define se o instrumento jurídico celebrado é um Termo de Parceria ou um Contrato de Gestão",
             "constraints": {
-            "required": true
-          }
+              "required": true,
+              "enum": [
+                "Contrato de Gestão",
+                "Termo de Parceria"
+              ]
+            }
           },
           {
             "name": "NUM_TERMO_CONTRATO",
@@ -39,8 +43,9 @@
             "title": "Número do Contrato ou Termo",
             "description": "Numeração do instrumento jurídico, estabelecida pela Secretaria de Estado de Planejamento e Gestão",
             "constraints": {
-            "required": true
-          }
+              "required": true,
+              "pattern": "\\d{3}\/\\d{4}"
+            }
           },
           {
             "name": "ORGAO_ESTATAL_CODIGO",
@@ -49,8 +54,8 @@
             "description": "Código da unidade orçamentária do órgão estadual signatário do instrumento jurídico.",
             "title": "Código do Órgão Estatal",
             "constraints": {
-            "required": true
-          }
+              "required": true
+            }
           },
           {
             "name": "ORGAO_ESTATAL_NOME",
@@ -59,8 +64,8 @@
             "title": "Nome do Órgão Estatal",
             "description": "Nome institucional do órgão estadual signatário do instrumento jurídico.",
             "constraints": {
-            "required": true
-          }
+              "required": true
+            }
           },
           {
             "name": "ORGAO_ESTATAL_SIGLA",
@@ -69,8 +74,8 @@
             "title": "Sigla do Órgão Estatal",
             "description": "Sigla do Órgão Estadual",
             "constraints": {
-            "required": true
-          }
+              "required": true
+            }
           },
           {
             "name": "ENTIDADE_PARCEIRA_NOME",
@@ -79,8 +84,8 @@
             "description": "Nome oficial da instituição do terceiro setor celebrante do instrumento jurídico.",
             "title": "Nome da Entidade Parceira",
             "constraints": {
-            "required": true
-          }
+              "required": true
+            }
           },
           {
             "name": "ENTIDADE_PARCEIRA_SIGLA",
@@ -89,8 +94,8 @@
             "title": "Sigla da Entidade Parceira",
             "description": "Sigla da instituição do terceiro setor celebrante do instrumento jurídico.",
             "constraints": {
-            "required": true
-          }
+              "required": true
+            }
           },
           {
             "name": "ENTIDADE_PARCEIRA_CNPJ",
@@ -99,8 +104,8 @@
             "title": "CNPJ da Entidade Parceira",
             "description": "Número de Cadastro Nacional de Pessoas Jurídicas da instituição do terceiro setor celebrante do instrumento jurídico",
             "constraints": {
-            "required": true
-          }
+              "required": true
+            }
           },
           {
             "name": "OBJETO",
@@ -109,8 +114,8 @@
             "title": "Objeto",
             "description": "O objeto do instrumento jurídico",
             "constraints": {
-            "required": true
-          }
+              "required": true
+            }
           },
           {
             "name": "SITUACAO",
@@ -119,28 +124,28 @@
             "title": "Situação",
             "description": "Informa se o instrumento jurídico está vigente ou foi extinto.",
             "constraints": {
-            "required": true
-          }
+              "required": true
+            }
           },
           {
             "name": "DATA_INICIO_VIGENCIA",
             "type": "date",
-            "format": "any",
+            "format": "%d/%m/%Y",
             "title": "Data de Início da Vigência",
             "description": "Data em que o instrumento jurídico se inicia, correspondente a data de publicação do mesmo no Diário Oficial dos Poderes do Estado de Minas Gerais.",
             "constraints": {
-            "required": true
-          }
+              "required": true
+            }
           },
           {
             "name": "DATA_FIM_VIGENCIA",
             "type": "date",
-            "format": "any",
+            "format": "%d/%m/%Y",
             "title": "Data Fim da Vigência",
             "description": "Data em que o instrumento jurídico terminou ou que será extinto.",
             "constraints": {
-            "required": true
-          }
+              "required": true
+            }
           },
           {
             "name": "URL_INTEGRA_TERMO_CONTRATO",
@@ -157,10 +162,7 @@
             "description": "Link para acessar a página principal contendo os documentos do Contrato de Gestão ou Termo de Parceria"
           }
         ],
-  "missingValues": [
-    "NA",
-    ""
-  ]
+      "primaryKey": "ID_INSTRUMENTO"
       }
     },
     {
@@ -179,40 +181,28 @@
             "type": "string",
             "format": "default",
             "title": "Número do Instrumento",
-            "description": "Numeração do instrumento jurídico, estabelecida pela Secretaria de Estado de Planejamento e Gestão.",
-            "constraints": {
-            "required": true
-          }
+            "description": "Numeração do instrumento jurídico, estabelecida pela Secretaria de Estado de Planejamento e Gestão."
           },
           {
             "name": "TIPO_DOCUMENTO",
             "type": "string",
             "format": "default",
             "title": "Tipo de Documento",
-            "description": "Informa o tipo de documento a que se refere: Termo Aditivo, Memória de Cálculo, Termo de Apostilamento e Termo de Alteração Simples",
-            "constraints": {
-            "required": true
-          }
+            "description": "Informa o tipo de documento a que se refere: Termo Aditivo, Memória de Cálculo, Termo de Apostilamento e Termo de Alteração Simples"
           },
           {
             "name": "DOCUMENTO",
             "type": "string",
             "format": "default",
             "title": "Número do Documento",
-            "description": "Informa o número do documento",
-            "constraints": {
-            "required": true
-          }
+            "description": "Informa o número do documento"
           },
           {
             "name": "URL_DOCUMENTO",
             "type": "string",
             "format": "uri",
             "title": "URL do Documento",
-            "description": "Link para acessar o documento",
-            "constraints": {
-            "required": true
-          }
+            "description": "Link para acessar o documento"
           },
           {
             "name": "OBSERVACOES",
@@ -222,10 +212,15 @@
             "description": "Dados adicionais para esclarecer alguma informação sobre a linha"
           }
         ],
-  "missingValues": [
-    "NA",
-    ""
-  ]
+        "foreignKeys": [
+          {
+            "fields": "ID_INSTRUMENTO",
+            "reference": {
+              "resource": "termos-parceria-contratos-gestao",
+              "fields": "ID_INSTRUMENTO"
+            }
+          }
+        ]
       }     
     },
     {
@@ -244,20 +239,14 @@
             "type": "string",
             "format": "default",
             "title": "Número do Instrumento",
-            "description": "Numeração do instrumento jurídico, estabelecida pela Secretaria de Estado de Planejamento e Gestão.",
-            "constraints": {
-            "required": true
-          }
+            "description": "Numeração do instrumento jurídico, estabelecida pela Secretaria de Estado de Planejamento e Gestão."
           },
           {
             "name": "ANO",
             "type": "year",
             "format": "default",
             "title": "Ano",
-            "description": "Um dos anos em que a parceria esteve vigente. Ano de referência das informações financeiras preenchidas nas colunas: “REPASSE_PREVISTO” e “REPASSE_REALIZADO”.",
-            "constraints": {
-            "required": true
-          }
+            "description": "Um dos anos em que a parceria esteve vigente. Ano de referência das informações financeiras preenchidas nas colunas: “REPASSE_PREVISTO” e “REPASSE_REALIZADO”."
           },
           {
             "name": "REPASSE_PREVISTO",
@@ -266,10 +255,7 @@
             "title": "Repasse Previsto",
             "description": "Valor total de recursos previstos para a execução da parceria, por ano.",
             "groupChar":".",
-            "decimalChar":",",
-            "constraints": {
-            "required": true
-          }
+            "decimalChar":","
           },
           {
             "name": "REPASSE_ATUALIZADO",
@@ -278,10 +264,7 @@
             "title": "Repasse Atualizado",
             "description": "Valor total de recursos efetivamente disponibilizados para a execução da parceria",
             "groupChar":".",
-            "decimalChar":",",
-            "constraints": {
-            "required": true
-          }
+            "decimalChar":","
           },
           {
             "name": "OBSERVACOES",
@@ -291,10 +274,15 @@
             "description": "Dados adicionais para esclarecer alguma informação sobre a linha"
           }
         ],
-  "missingValues": [
-    "NA",
-    ""
-  ]
+        "foreignKeys": [
+          {
+            "fields": "ID_INSTRUMENTO",
+            "reference": {
+              "resource": "termos-parceria-contratos-gestao",
+              "fields": "ID_INSTRUMENTO"
+            }
+          }
+        ]
       }
     },
     {
@@ -351,10 +339,15 @@
             "description": "Dados adicionais para esclarecer alguma informação sobre a linha"
           }
         ],
-  "missingValues": [
-    "NA",
-    ""
-  ]
+        "foreignKeys": [
+          {
+            "fields": "ID_INSTRUMENTO",
+            "reference": {
+              "resource": "termos-parceria-contratos-gestao",
+              "fields": "ID_INSTRUMENTO"
+            }
+          }
+        ]
       }
     }
   ],
