@@ -4,5 +4,4 @@
 .Ruserdata
 logs/*
 !/logs/.gitkeep
-build/*
 !/build/.gitkeep
