@@ -10,7 +10,8 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "schema": "schema/termos-parceria-contratos-gestao.json"
+      "schema": "schema/termos-parceria-contratos-gestao.json",
+      "dialect": "schema/dialect.json"
     },
     {
       "name": "aditivos",
@@ -21,7 +22,8 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "schema": "schema/aditivos.json"
+      "schema": "schema/aditivos.json",
+      "dialect": "schema/dialect.json"
     },
     {
       "name": "repasses",
@@ -32,7 +34,8 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "schema": "schema/repasses.json"
+      "schema": "schema/repasses.json",
+      "dialect": "schema/dialect.json"
     },
     {
       "name": "relatorios",
@@ -43,7 +46,8 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "schema": "schema/relatorios.json"
+      "schema": "schema/relatorios.json",
+      "dialect": "schema/dialect.json"
     }
   ],
   "keywords": [
