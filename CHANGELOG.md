@@ -10,23 +10,31 @@ O histórico completo das alterações está disponível [aqui](https://github.c
 
 - Redistribuição das informações constantes da versão anterior deste conjunto de dados entre os arquivos `termos-parceria-contratos-gestao` e `repasses`, conforme quadro abaixo:
 
-    | Coluna Anterior|	Nova coluna |	Arquivo |
-    | --            |   --             | --            |
-    |TIPO_INSTRUMENTO|	sem alteração|	termos-parcerias-contratos-gestao|
-    |NUM_TERMO_CONTRATO|	sem alteração|	termos-parcerias-contratos-gestao|
-    |CODIGO_ORGAO_ESTATAL|	ORGAO_ESTATAL_CODIGO|	termos-parcerias-contratos-gestao|
-    |NOME_ORGAO_ESTATAL|	ORGAO_ESTATAL_NOME|	termos-parcerias-contratos-gestao|
-    |ORGAO_ESTATAL_SIGLA|	sem alteração|	termos-parcerias-contratos-gestao|
-    |ENTIDADE_PARCEIRA_NOME|	sem alteração|	termos-parcerias-contratos-gestao|
-    |ENTIDADE_PARCEIRA_SIGLA|	sem alteração|	termos-parcerias-contratos-gestao|
-    |ENTIDADE_PARCEIRA_CNPJ|	sem alteração|	termos-parcerias-contratos-gestao|
-    |OBJETO|	sem alteração|	termos-parcerias-contratos-gestao|
-    |SITUACAO|	sem alteração|	termos-parcerias-contratos-gestao|
-    |DATA_INICIO_VIGENCIA|	sem alteração|	termos-parcerias-contratos-gestao|
-    |DATA_FIM_VIGENCIA|	sem alteração|	termos-parcerias-contratos-gestao|
-    |ANO|	sem alteração|	repasses|
-    |REPASSE_PREVISTO|	sem alteração|	repasses|
-    |REPASSE_REALIZADO|	sem alteração|	repasses|
+    - Item redistribuído *sem* alteração na nomenclatura:
+
+        - TIPO_INSTRUMENTO
+        - NUM_TERMO_CONTRATO
+        - ORGAO_ESTATAL_SIGLA
+        - ENTIDADE_PARCEIRA_NOME
+        - ENTIDADE_PARCEIRA_SIGLA
+        - ENTIDADE_PARCEIRA_CNPJ
+        - OBJETO
+        - SITUACAO
+        - DATA_INICIO_VIGENCIA
+        - DATA_FIM_VIGENCIA
+
+    - Item redistribuído *com* alteração na nomenclatura / de-para:
+
+        - CODIGO_ORGAO_ESTATAL: ORGAO_ESTATAL_CODIGO
+        - NOME_ORGAO_ESTATAL: ORGAO_ESTATAL_NOME
+
+- Redistribuição das informações constantes da versão anterior deste conjunto de dados para o arquivo repasses, sem alteração de nomenclatura dos itens, conforme listagem abaixo:
+
+    - Item redistribuído *sem* alteração na nomenclatura:
+
+        - ANO 
+        - REPASSE_PREVISTO 
+        - REPASSE_REALIZADO
 
 -  Inserção, no arquivo `termos-parceria-contratos-gestao`, das colunas:
 	- `URL_INTEGRA_TERMO_CONTRATO`: Link para acessar o Contrato de Gestão ou Termo de Parceria;
