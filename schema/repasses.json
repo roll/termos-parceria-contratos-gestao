@@ -19,18 +19,14 @@
       "type": "number",
       "format": "default",
       "title": "Repasse Previsto",
-      "description": "Valor total de recursos previstos para a execução da parceria, por ano.",
-      "groupChar": ".",
-      "decimalChar": ","
+      "description": "Valor total de recursos previstos para a execução da parceria, por ano."
     },
     {
       "name": "REPASSE_ATUALIZADO",
       "type": "number",
       "format": "default",
       "title": "Repasse Atualizado",
-      "description": "Valor total de recursos efetivamente disponibilizados para a execução da parceria",
-      "groupChar": ".",
-      "decimalChar": ","
+      "description": "Valor total de recursos efetivamente disponibilizados para a execução da parceria"
     },
     {
       "name": "OBSERVACOES",
