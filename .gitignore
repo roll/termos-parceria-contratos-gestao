@@ -5,3 +5,5 @@
 logs/*
 !/logs/.gitkeep
 !/build/.gitkeep
+venv/
+.env
