@@ -4,7 +4,7 @@ Arquivo para documentação das principais alterações sofridas por este conjun
 
 O histórico completo das alterações está disponível [aqui](https://github.com/dados-mg/termos-parceria-contratos-gestao/commits/master).
 
-## Junho/2021
+## versão 0.1.0 - Junho/2021
 
 - Representação das informações do conjunto de dados em 4 arquivos, com identificação única de cada termo de parceria e/ou contrato de gestão realizada pela coluna `ID_INSTRUMENTO`, presente em todos os arquivos.
 
@@ -44,6 +44,6 @@ O histórico completo das alterações está disponível [aqui](https://github.c
 
 - Inserção, no arquivo `aditivos`, de informações sobre os termos termos aditivos celebrados.
 
-## Novembro/2019
+## versão 0.0.1 - Novembro/2019
 
 - Publicação da versão inicial do conjunto de dados

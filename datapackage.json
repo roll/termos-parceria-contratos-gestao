@@ -60,5 +60,33 @@
   ],
   "name": "termos-parceria-contratos-gestao",
   "title": "Contrato de Gestão e Termos de Parceria",
-  "description": "Documentos dos Termos de Parceria e Contratos de Gestão firmados pelos órgãos e entidades do Poder Executivo Estadual com OSCIPs e Organizações Sociais"
+  "description": "Documentos dos Termos de Parceria e Contratos de Gestão firmados pelos órgãos e entidades do Poder Executivo Estadual com OSCIPs e Organizações Sociais",
+  "owner_org": "secretaria-de-estado-de-planejamento-e-gestao-seplag",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "version": "0.1.0",
+  "contributors": [
+        {
+      "title": "Superintendência Central de Parcerias com o Terceiro Setor",
+      "role": "author"
+    },
+    {
+      "title": "Diretoria Central de Transparência Ativa",
+      "role": "maintainer"
+    }
+  ],
+  "ckan_hosts": {
+    "https://homologa.cge.mg.gov.br/": {
+      "termos-parceria-contratos-gestao": "f66ad9dc-090a-4c0f-9da0-def65046e4b7",
+      "aditivos": "0644f029-4bc7-4647-904a-c59d2d5fd1ee",
+      "repasses": "87f51195-abfc-4bc1-a968-84dc07f92ddb",
+      "relatorios": "5717dd1b-4b30-4198-850e-051168bfca92",
+      "datapackage.json": "08cf90e2-5f83-4865-a49f-ff70c88bddaf"
+    }
+  }
 }
