@@ -81,7 +81,7 @@
     }
   ],
   "ckan_hosts": {
-    "https://dados.mg.gov.br": {
+    "https://dados.mg.gov.br/": {
       "termos-parceria-contratos-gestao": "f66ad9dc-090a-4c0f-9da0-def65046e4b7",
       "aditivos": "0644f029-4bc7-4647-904a-c59d2d5fd1ee",
       "repasses": "87f51195-abfc-4bc1-a968-84dc07f92ddb",
