@@ -12,3 +12,4 @@ Os instrumentos jurídicos que formalizam as parcerias são:
 São disponibilizados os contratos de gestão e termos de parceria firmados com o Estado, acompanhados dos respectivos termos aditivos, os repasses previstos e realizados, bem como os relatórios das comissões de avaliação, os relatórios de monitoramento e os relatórios gerenciais.
 
 Mais informações podem ser obtidas no sítio eletrônico da [Secretaria de Estado de Planejamento e Gestão](http://www.planejamento.mg.gov.br/pagina/planejamento-e-orcamento/oscips-e-organizacoes-sociais).
+
