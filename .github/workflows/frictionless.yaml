@@ -9,4 +9,4 @@ jobs:
        - name: Checkout repository
          uses: actions/checkout@v2
        - name: Validate data
-         uses: frictionlessdata/repository@v0.8.0
+         uses: frictionlessdata/repository@v1
